@@ -5,12 +5,13 @@ INJECTED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xm
 INJECTED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xml:1:1-37:12
 INJECTED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xml:1:1-37:12
 MERGED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xml:1:1-37:12
+MERGED from [:@react-native-community_geolocation] /home/sanghi/Krotov/client/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-camera] /home/sanghi/Krotov/client/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
 MERGED from [:react-native-gesture-handler] /home/sanghi/Krotov/client/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] /home/sanghi/Krotov/client/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-maps] /home/sanghi/Krotov/client/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-cardview] /home/sanghi/Krotov/client/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:@react-native-community_cameraroll] /home/sanghi/Krotov/client/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:@react-native-community_geolocation] /home/sanghi/Krotov/client/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /home/sanghi/Krotov/client/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-vector-icons] /home/sanghi/Krotov/client/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.61.4] /home/sanghi/.gradle/caches/transforms-2/files-2.1/39d262f7665a61c4f2c84da31d81a244/AndroidManifest.xml:2:1-13:12
@@ -19,6 +20,7 @@ MERGED from [org.webkit:android-jsc:r245459] /home/sanghi/.gradle/caches/transfo
 MERGED from [com.google.android.gms:play-services-vision:12.0.1] /home/sanghi/.gradle/caches/transforms-2/files-2.1/66a32767170b6621983bc1ffa61063e1/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/77abd9fb2af266b30ada6a1cdd9efa41/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.1.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/82e8eaa4e973056ececed7107a5a6d4e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/a08f78cca899e55535dd9f7ff208d6d1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/5c677be1565805e45c0043f124c414af/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] /home/sanghi/.gradle/caches/transforms-2/files-2.1/0723f7484864dc4d8f28929e5742a8ff/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:16.1.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/dd59002523ad492ad413c080ae73872e/AndroidManifest.xml:17:1-29:12
@@ -203,6 +205,8 @@ uses-sdk
 INJECTED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xml
+MERGED from [:@react-native-community_geolocation] /home/sanghi/Krotov/client/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_geolocation] /home/sanghi/Krotov/client/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-camera] /home/sanghi/Krotov/client/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-camera] /home/sanghi/Krotov/client/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /home/sanghi/Krotov/client/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -211,10 +215,10 @@ MERGED from [:react-native-reanimated] /home/sanghi/Krotov/client/node_modules/r
 MERGED from [:react-native-reanimated] /home/sanghi/Krotov/client/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-maps] /home/sanghi/Krotov/client/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-maps] /home/sanghi/Krotov/client/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-cardview] /home/sanghi/Krotov/client/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-cardview] /home/sanghi/Krotov/client/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:@react-native-community_cameraroll] /home/sanghi/Krotov/client/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:@react-native-community_cameraroll] /home/sanghi/Krotov/client/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:@react-native-community_geolocation] /home/sanghi/Krotov/client/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:@react-native-community_geolocation] /home/sanghi/Krotov/client/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /home/sanghi/Krotov/client/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /home/sanghi/Krotov/client/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/sanghi/Krotov/client/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -231,6 +235,8 @@ MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/sanghi/.gradle/ca
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/77abd9fb2af266b30ada6a1cdd9efa41/AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.1.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/82e8eaa4e973056ececed7107a5a6d4e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.1.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/82e8eaa4e973056ececed7107a5a6d4e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/a08f78cca899e55535dd9f7ff208d6d1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/a08f78cca899e55535dd9f7ff208d6d1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/5c677be1565805e45c0043f124c414af/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/5c677be1565805e45c0043f124c414af/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] /home/sanghi/.gradle/caches/transforms-2/files-2.1/0723f7484864dc4d8f28929e5742a8ff/AndroidManifest.xml:5:5-44

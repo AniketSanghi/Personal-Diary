@@ -15,6 +15,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import org.reactnative.camera.RNCameraPackage;
 import com.reactnativecommunity.cameraroll.CameraRollPackage;
+import com.kishanjvaghela.cardview.RNCardViewPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 

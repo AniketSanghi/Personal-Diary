@@ -4,6 +4,9 @@ import styles from './SideMenu.style';
 import {NavigationActions} from 'react-navigation';
 import {ScrollView, Text, View, Image} from 'react-native';
 import { StackNavigator } from 'react-navigation';
+import IOSIcon from "react-native-vector-icons/AntDesign";
+import NewNote from "../app/NewNote";
+
 
 class SideMenu extends Component {
   navigateToScreen = (route) => () => {
@@ -27,9 +30,10 @@ class SideMenu extends Component {
 
             <View style={styles.navSectionStyle}>
 
-              <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Detail')}>
-                Photo Gallery
+              <Text style={styles.navItemStyle} onPress={() => <NewNote/>}>
+                New Note
               </Text>
+               <View style={{padding: 10, justifyContent: 'flex-end'}}><IOSIcon name="doubleright" size={20} /></View>
             </View>
             
            
@@ -44,7 +48,7 @@ class SideMenu extends Component {
 }
 
 SideMenu.propTypes = {
-  navigation: PropTypes.object
+  navigation: PropTypes.object,
 };
 
 export default SideMenu;

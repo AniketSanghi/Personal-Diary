@@ -7,11 +7,14 @@ export default {
   navItemStyle: {
     padding: 10,
     fontWeight: 'bold',
+    width: 250
     
   },
   navSectionStyle: {
     backgroundColor: '#fafafa',
-    marginTop: 20
+    marginTop: 20,
+    flex: 1,
+  flexDirection: 'row'
   },
   top: {
     backgroundColor: 'black',

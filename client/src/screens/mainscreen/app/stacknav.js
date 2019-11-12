@@ -24,7 +24,7 @@ const stackNav = createStackNavigator({
         <TouchableOpacity onPress={() => navigation.openDrawer()} style={{flex: 1, flexDirection: 'row'}}>
 
                     <IOSIcon name="menu" size={30} />
-                    <Text style={{paddingLeft: 50, fontSize: 20, fontWeight: 'bold'}}> Krotov </Text>
+                    <Text style={{paddingLeft: 20, fontSize: 18, fontWeight: 'bold'}}> Personal Diary </Text>
         </TouchableOpacity>
       ),
       headerRight:

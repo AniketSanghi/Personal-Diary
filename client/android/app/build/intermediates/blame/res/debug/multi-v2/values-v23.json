@@ -4,6 +4,25 @@
             "outputFile": "/home/sanghi/Krotov/client/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
+                    "source": "/home/sanghi/.gradle/caches/transforms-2/files-2.1/a08f78cca899e55535dd9f7ff208d6d1/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "2646",
+                        "endLines": "39",
+                        "endColumns": "12",
+                        "endOffsets": "2791"
+                    }
+                },
+                {
                     "source": "/home/sanghi/.gradle/caches/transforms-2/files-2.1/046badc4fa811f1a80f2dc696c29497a/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",

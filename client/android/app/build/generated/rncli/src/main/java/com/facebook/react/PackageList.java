@@ -20,6 +20,8 @@ import com.reactnativecommunity.cameraroll.CameraRollPackage;
 import com.reactnativecommunity.geolocation.GeolocationPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
+// react-native-cardview
+import com.kishanjvaghela.cardview.RNCardViewPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-maps
@@ -78,6 +80,7 @@ public class PackageList {
       new CameraRollPackage(),
       new GeolocationPackage(),
       new RNCameraPackage(),
+      new RNCardViewPackage(),
       new RNGestureHandlerPackage(),
       new MapsPackage(),
       new ReanimatedPackage(),

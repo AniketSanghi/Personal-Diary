@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const schema = new Schema({
     username: { type: String,required: true },
+    title: {type: String},
     content: { type: String},
     date: {type: String},
     image: {type: String},
