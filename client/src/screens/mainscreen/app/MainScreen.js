@@ -25,7 +25,7 @@ class MainScreen extends Component {
 
   _run() {
 
-    fetch('http://192.168.43.196:3000/users', {
+    fetch('http://172.24.33.169:3000/users', {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',

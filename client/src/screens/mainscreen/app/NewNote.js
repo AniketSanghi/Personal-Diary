@@ -31,7 +31,7 @@ export default class NewNote extends Component {
         this.setState({ isLoggingIn:true, message: '' });
 
         var proceed = false;
-        fetch('http://192.168.43.196:3000/users/register', {
+        fetch('http://172.24.33.169:3000/users/register', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
