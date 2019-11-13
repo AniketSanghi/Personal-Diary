@@ -11,10 +11,11 @@ import { createStackNavigator } from  'react-navigation-stack';
 import IOSIcon from "react-native-vector-icons/Entypo";
 import camera from "react-native-vector-icons/Entypo"
 import MainScreen from "./MainScreen";
-import DetailScreen from "./DetailScreen";
+import NewNote from "./NewNote";
 import CameraScreen from "./Camera";
 
 const stackNav = createStackNavigator({
+  
   Main : {
     screen: MainScreen,
     navigationOptions: ({navigation}) => ({
@@ -29,20 +30,29 @@ const stackNav = createStackNavigator({
       ),
       headerRight:
       (
-        <TouchableOpacity onPress={() => navigation.navigate('Camera')}>
+        <TouchableOpacity onPress={() => navigation.push('Camera')}>
                     <IOSIcon name="camera" size={30} style={{paddingRight: 10}}/>
         </TouchableOpacity>
       ),
       
     })
   },
-  Camera: {
-    screen: CameraScreen,
+  NewNote: {
+    screen: NewNote,
     navigationOptions: ({navigation}) => ({
       title: "",
-      header: null
+      
+      
+    }),
+  },
+  Camera: {
+   screen: CameraScreen,
+    navigationOptions: ({navigation}) => ({
+      title: "",
+      header: null,
     })     
-  }
+  },
+  
 
 });
 

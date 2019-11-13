@@ -5,7 +5,8 @@ import {
   StyleSheet,
   Button,
   ActivityIndicator,
-  ScrollView
+  ScrollView,
+  TouchableHighlight
 } from 'react-native';
 
 import CardView from 'react-native-cardview'
@@ -15,7 +16,8 @@ class MainScreen extends Component {
 
   state = {
     data: null,
-    received: false
+    received: false,
+    style: styles.a1,
   }
 
   constructor(props) {
@@ -61,11 +63,11 @@ class MainScreen extends Component {
                     <Text style={{width: 300, fontWeight: 'bold', fontSize: 30}}> {data.title} </Text>
                     <Text style={{paddingTop: 30}}> {data.date} </Text>
                   </View>
-                  <ScrollView style={{height: 150}}>
+                  <TouchableHighlight style={this.state.style} onPress={() => this.setState({style: styles.a2})}>
                     <Text style={{padding: 10}}>
                       {data.content}
                     </Text>
-                  </ScrollView>
+                  </TouchableHighlight>
               </CardView>
             </View>
           )
@@ -81,6 +83,11 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center'
+  },
+  a1: {
+    height: 150,
+  },
+  a2: {
   }
 });
 
