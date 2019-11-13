@@ -6,10 +6,13 @@ import {
   Button,
   ActivityIndicator,
   ScrollView,
-  TouchableHighlight
+  TouchableHighlight,
+  Image
 } from 'react-native';
 
 import CardView from 'react-native-cardview'
+import PTRView from 'react-native-pull-to-refresh';
+
 
 
 class MainScreen extends Component {
@@ -20,10 +23,9 @@ class MainScreen extends Component {
     style: styles.a1,
   }
 
-  constructor(props) {
-  super(props);
-  
-          fetch('http://172.24.33.169:3000/users', {
+  _run() {
+
+    fetch('http://192.168.43.196:3000/users', {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',
@@ -40,8 +42,17 @@ class MainScreen extends Component {
                 this.setState({ message: err.message });
                 this.setState({ isLoggingIn: false })
             });
+  }
 
+  constructor(props) {
+    super(props);
+    this._run();
+  }
 
+  _refresh() {
+    return new Promise((resolve) => {
+      setTimeout(()=>{resolve()}, 2000)
+    });
   }
 
   render () {
@@ -50,6 +61,7 @@ class MainScreen extends Component {
       return (<View style={{marginTop: 10}}><ActivityIndicator/></View>);
 
     return (
+    <PTRView onRefresh={() => this._refresh().then(() => this._run())}>
     <ScrollView>
      {
       this.state.data.map((data) => {
@@ -59,14 +71,21 @@ class MainScreen extends Component {
                   cardElevation={100}
                   cardMaxElevation={100}
                   cornerRadius={5}>
+                  
+                  <Image
+                    source={{ uri: data.image }}
+                    style={{ width: 390, height: 400,marginTop: 10, marginBottom: 10, resizeMode: 'contain' }}
+                  />
                   <View style={{flex: 1, flexDirection: 'row'}}>
                     <Text style={{width: 300, fontWeight: 'bold', fontSize: 30}}> {data.title} </Text>
                     <Text style={{paddingTop: 30}}> {data.date} </Text>
                   </View>
                   <TouchableHighlight style={this.state.style} onPress={() => this.setState({style: styles.a2})}>
+                  <ScrollView>
                     <Text style={{padding: 10}}>
                       {data.content}
                     </Text>
+                  </ScrollView>
                   </TouchableHighlight>
               </CardView>
             </View>
@@ -74,6 +93,7 @@ class MainScreen extends Component {
         })
       }
       </ScrollView>
+      </PTRView>
     )        
   }
 }
@@ -88,6 +108,7 @@ const styles = StyleSheet.create({
     height: 150,
   },
   a2: {
+   
   }
 });
 

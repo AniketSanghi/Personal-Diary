@@ -8,7 +8,10 @@ import {
     Button,
     Alert,
     ActivityIndicator,
+    Image,
 } from 'react-native';
+import ImagePicker from 'react-native-image-picker';
+
 
 export default class NewNote extends Component {
 
@@ -20,6 +23,7 @@ export default class NewNote extends Component {
         isLoggingIn: false,
         message: '',
         style: styles.space,
+        filePath: {},
     }
 
     _newNote = () => {
@@ -27,7 +31,7 @@ export default class NewNote extends Component {
         this.setState({ isLoggingIn:true, message: '' });
 
         var proceed = false;
-        fetch('http://172.24.33.169:3000/users/register', {
+        fetch('http://192.168.43.196:3000/users/register', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -37,10 +41,16 @@ export default class NewNote extends Component {
                   title: this.state.title,
                   content: this.state.content,
                   date: this.state.date,
+                  image: this.state.filePath.uri,
             })
         })
         .then((response) => {
-             if (response.status==200) {this.setState({message: "Successfully Added"})}
+             if (response.status==200) {
+                this.setState({message: "Successfully Added"});
+                this.cleartitle();
+                this.clearDate;
+                this.clearContent;
+            }
              return response;
          })
          .then((response) => response.json())
@@ -56,6 +66,38 @@ export default class NewNote extends Component {
                 this.setState({ isLoggingIn: false })
             });
     }
+
+    chooseFile = () => {
+            var options = {
+              title: 'Select Image',
+              customButtons: [
+                { name: 'customOptionKey', title: 'Choose Photo from Custom Option' },
+              ],
+              storageOptions: {
+                skipBackup: true,
+                path: 'images',
+              },
+            };
+            ImagePicker.showImagePicker(options, response => {
+              console.log('Response = ', response);
+         
+              if (response.didCancel) {
+                console.log('User cancelled image picker');
+              } else if (response.error) {
+                console.log('ImagePicker Error: ', response.error);
+              } else if (response.customButton) {
+                console.log('User tapped custom button: ', response.customButton);
+                alert(response.customButton);
+              } else {
+                let source = response;
+                // You can also display the image using data:
+                // let source = { uri: 'data:image/jpeg;base64,' + response.data };
+                this.setState({
+                  filePath: source,
+                });
+              }
+            });
+          };
 
     cleartitle = () => {
         this._title.setNativeProps({ text: '' });
@@ -86,6 +128,7 @@ export default class NewNote extends Component {
                     style={{fontSize: 27}}>
                     Add a New Note
                 </Text>
+
                 <TextInput
                     ref={component => this._title = component}
                     placeholder='Title' 
@@ -108,6 +151,12 @@ export default class NewNote extends Component {
                     onFocus={this.clearContent}
                     onBlur={this.changeStyle}
                 />
+                <Image
+                    source={{ uri: this.state.filePath.uri }}
+                    style={{ width: 100, height: 100, marginLeft: 100, marginBottom: 50 }}
+                  />
+                <Button title="Choose File" onPress={this.chooseFile.bind(this)} />
+
                 {!!this.state.message && (
                     <Text
                         style={{fontSize: 14, color: 'red', padding: 5}}>

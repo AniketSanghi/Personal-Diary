@@ -24,6 +24,8 @@ import org.reactnative.camera.RNCameraPackage;
 import com.kishanjvaghela.cardview.RNCardViewPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+// react-native-image-picker
+import com.imagepicker.ImagePickerPackage;
 // react-native-maps
 import com.airbnb.android.react.maps.MapsPackage;
 // react-native-reanimated
@@ -82,6 +84,7 @@ public class PackageList {
       new RNCameraPackage(),
       new RNCardViewPackage(),
       new RNGestureHandlerPackage(),
+      new ImagePickerPackage(),
       new MapsPackage(),
       new ReanimatedPackage(),
       new RNScreensPackage(),

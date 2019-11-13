@@ -12,6 +12,7 @@ MERGED from [:react-native-reanimated] /home/sanghi/Krotov/client/node_modules/r
 MERGED from [:react-native-maps] /home/sanghi/Krotov/client/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
 MERGED from [:react-native-cardview] /home/sanghi/Krotov/client/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:@react-native-community_cameraroll] /home/sanghi/Krotov/client/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:react-native-screens] /home/sanghi/Krotov/client/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-vector-icons] /home/sanghi/Krotov/client/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.61.4] /home/sanghi/.gradle/caches/transforms-2/files-2.1/39d262f7665a61c4f2c84da31d81a244/AndroidManifest.xml:2:1-13:12
@@ -119,6 +120,8 @@ application
 ADDED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xml:14:5-35:19
 MERGED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xml:14:5-35:19
 MERGED from /home/sanghi/Krotov/client/android/app/src/main/AndroidManifest.xml:14:5-35:19
+MERGED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [com.facebook.react:react-native:0.61.4] /home/sanghi/.gradle/caches/transforms-2/files-2.1/39d262f7665a61c4f2c84da31d81a244/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.61.4] /home/sanghi/.gradle/caches/transforms-2/files-2.1/39d262f7665a61c4f2c84da31d81a244/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services-vision:12.0.1] /home/sanghi/.gradle/caches/transforms-2/files-2.1/66a32767170b6621983bc1ffa61063e1/AndroidManifest.xml:7:5-20
@@ -219,6 +222,8 @@ MERGED from [:react-native-cardview] /home/sanghi/Krotov/client/node_modules/rea
 MERGED from [:react-native-cardview] /home/sanghi/Krotov/client/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:@react-native-community_cameraroll] /home/sanghi/Krotov/client/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:@react-native-community_cameraroll] /home/sanghi/Krotov/client/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /home/sanghi/Krotov/client/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /home/sanghi/Krotov/client/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/sanghi/Krotov/client/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -353,6 +358,22 @@ uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from [:react-native-maps] /home/sanghi/Krotov/client/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-81
 	android:name
 		ADDED from [:react-native-maps] /home/sanghi/Krotov/client/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
+provider#com.imagepicker.FileProvider
+ADDED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-60
+	android:exported
+		ADDED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-56
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+	android:resource
+		ADDED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+	android:name
+		ADDED from [:react-native-image-picker] /home/sanghi/Krotov/client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sanghi/.gradle/caches/transforms-2/files-2.1/5c677be1565805e45c0043f124c414af/AndroidManifest.xml:23:5-79
 	android:name

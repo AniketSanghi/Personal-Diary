@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Nov 12 22:26:40 IST 2019
+#Wed Nov 13 12:04:15 IST 2019
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=/home/sanghi/Krotov/client/android/app/build/intermediates/transforms/mergeJniLibs/debug/0

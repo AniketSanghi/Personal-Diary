@@ -27,7 +27,7 @@ export default class Login extends Component {
         this.setState({ isLoggingIn: true, message: '' });
 
         var proceed = false;
-        fetch('http://172.24.33.169:4000/users/authenticate', {
+        fetch('http://192.168.43.196:4000/users/authenticate', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
