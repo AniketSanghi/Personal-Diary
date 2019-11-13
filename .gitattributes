@@ -1,1 +1,4 @@
 *.pbxproj -text
+
+* linguist-vendored
+*.js linguist-vendored=false
