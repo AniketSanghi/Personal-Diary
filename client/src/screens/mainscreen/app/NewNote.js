@@ -148,7 +148,7 @@ export default class NewNote extends Component {
                     ref={component => this._content = component}
                     placeholder='Content' 
                     onChangeText={(content) => this.setState({content})}
-                    onFocus={this.clearContent}
+                    
                     onBlur={this.changeStyle}
                 />
                 <Image
